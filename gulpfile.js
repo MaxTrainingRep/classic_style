@@ -3,13 +3,9 @@
 const gulp = require("gulp");
 const webpack = require("webpack-stream");
 const browsersync = require("browser-sync");
-const sass = require("gulp-sass")(require('sass'));
-const autoprefixer = require("autoprefixer");
-const cleanCSS = require("gulp-clean-css");
-const postcss = require("gulp-postcss");
 
-// const dist = "./dist/";
-const dist = "C:/MAMP/htdocs/test";
+const dist = "./dist/";
+// const dist = "C:/MAMP/htdocs/test";
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
